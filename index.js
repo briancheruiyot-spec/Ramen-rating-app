@@ -14,3 +14,4 @@ function displayRamens() {
     ramenMenu.appendChild(img);
   });
 }
+
