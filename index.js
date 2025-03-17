@@ -15,3 +15,18 @@ function displayRamens() {
   });
 }
 
+function handleClick(ramen) {
+  const detailImage = document.getElementById("detail-image");
+  const detailName = document.getElementById("detail-name");
+  const detailRestaurant = document.getElementById("detail-restaurant");
+  const detailRating = document.getElementById("detail-rating");
+  const detailComment = document.getElementById("detail-comment");
+
+  detailImage.src = ramen.image;
+  detailImage.alt = ramen.name;
+  detailName.textContent = ramen.name;
+  detailRestaurant.textContent = ramen.restaurant;
+  detailRating.textContent = `Rating: ${ramen.rating}`;
+  detailComment.textContent = `Comment: ${ramen.comment}`;
+  detailImage.style.display = 'block'
+}
