@@ -30,3 +30,26 @@ function handleClick(ramen) {
   detailComment.textContent = `Comment: ${ramen.comment}`;
   detailImage.style.display = 'block'
 }
+
+function addSubmitListener() {
+  const form = document.getElementById("new-ramen");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const newRamen = {
+      id: ramens.length + 1,
+      name: e.target.name.value,
+      restaurant: e.target.restaurant.value,
+      image: e.target.image.value,
+      rating: parseFloat(e.target.rating.value),
+      comment: e.target.comment.value
+    };
+    ramens.push(newRamen);
+    const ramenMenu = document.getElementById("ramen-menu");
+    const img = document.createElement("img");
+    img.src = newRamen.image;
+    img.alt = newRamen.name;
+    img.addEventListener("click", () => handleClick(newRamen));
+    ramenMenu.appendChild(img);
+    form.reset();
+  });
+}
