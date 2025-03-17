@@ -1,0 +1,97 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#ramen-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+#ramen-menu img {
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+
+}
+#ramen-menu img {
+  display: flex;
+  justify-items: center;
+}
+#ramen-menu img:hover {
+  border-color: blue;
+}
+
+#ramen-detail {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#ramen-detail img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#ramen-detail h2,
+#ramen-detail h3,
+#ramen-detail p {
+  margin: 10px 0;
+}
+
+#new-ramen {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(60, 60, 60);
+  width: 500px;
+  margin: 0 auto;
+  color: white; 
+}
+
+#new-ramen label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#new-ramen input,
+#new-ramen textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#ramen-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#ramen-button:hover {
+  opacity: 0.8;
+}
+#ramen-button:active{
+  opacity: 0.6
+}
+form h2 {
+  text-align: center;
+}
